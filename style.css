@@ -1,0 +1,277 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Dancing+Script:wght@400..700&family=Homemade+Apple&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+}
+
+nav{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding:10px 40px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    backdrop-filter: blur(20px);
+}
+
+nav .menu h1{
+font-family: poppins;
+font-size: 15px;
+}
+
+nav .logo h1{
+    font-family: Freight big pro;
+    font-size: 40px;
+    margin-left: 50%;
+}
+
+nav .some-box h1{
+    background-color: yellow;
+    font-family: poppins;
+    padding:10px 20px;
+    font-size: 20px;
+}
+
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 68vh;   
+    font-size: 35px;
+    font-family: Freight big pro;
+    line-height: 1.2;
+    flex-direction: column;
+}
+
+.header h1 span{
+    font-family: "Homemade Apple", cursive;
+    font-weight: 400;
+}
+
+
+.header .some-box{
+    background-color: yellow;
+    font-family: poppins;
+    padding:10px 20px;
+    font-size: 10px;
+}
+
+
+
+.slider{
+    height: 450px;
+    margin: auto;
+    position: relative;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+
+}
+
+.slide-track{
+    display: flex;
+    width: calc(450px*12);
+    animation:ani1 40s linear infinite;
+}
+@keyframes ani1 {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(calc(-450px*6));
+    }
+}
+
+.slide{
+    height: 300px;
+    width: 450px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
+
+img{
+    width: 100%;
+}
+
+.box-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    text-align: center;
+    font-family: Freight big pro;
+    font-size: 26px;
+    flex-direction: column;
+}
+
+.box-title h1{
+    font-size: 70px;
+}
+
+
+.box-title h1 span{
+    font-family: "Homemade Apple", cursive;
+    line-height: .2;
+}
+
+/* ------------------------------------ - ----------------------------------- */
+.large-back{
+    position: relative;
+  
+}
+
+.back-img img{
+    height: 90vh;
+}
+.matter{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    font-family: Freight big pro;
+    font-size: 30px;
+    letter-spacing: 5px;
+    line-height: 50px;
+}
+
+.matter span{
+    font-family: "Homemade Apple", cursive;
+}
+.matter h3{
+    margin-top: 20px;
+    background-color: yellow;
+    font-family: poppins;
+    padding:1px 15px;
+    font-size: 14px ;
+    display: inline-block;
+    color:black;
+}
+
+.boxes{
+    margin-bottom: 90px;
+    font-family: poppins;
+}
+.container{
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 30px;
+    
+}
+
+.boxes .container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 820%;
+    align-items: center;
+ 
+   
+}
+.box h3 {
+    display: flex;
+    gap:10px;
+    align-items: center;
+}
+.box{
+
+    height: 500px;
+    flex:1;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 40px 20px;
+    margin-top: 30px;
+    line-height: 30px;
+    margin-bottom: 50px;
+}
+
+.box img{
+    width: 380px;
+    height: 400px;
+    border-radius: 10px;
+    border:3px solid burlywood
+}
+
+.box p{
+    margin-top: 5px;
+    line-height: 1.2;
+}
+
+.box h3{
+    margin-top: 5px;
+}
+
+
+@media (max-width:500px){
+ nav{
+    padding:4px 7px; 
+ }   
+.header{
+    font-size: 20px;
+    padding: 20px;
+    line-height: 1;
+}
+.header .some-box{
+    margin-top: 30px;
+}
+
+.box-container{
+    padding:0px 30px;
+
+}
+.box-title h1{
+
+    font-size: 30px;
+    margin-bottom: 20px;
+    padding:0px 10px;
+}
+.box-title h4{
+    font-size: 20px;
+}
+.slider{
+    margin-top: -80px;
+}
+.boxes{
+    margin-top: -60px;
+    text-align: center;
+   
+}
+.boxes{
+    margin-top: -60px;
+   
+
+}
+.box{
+    margin-bottom: -10px;
+    font-size: 18px;
+}
+.box h3{
+    justify-content: center;
+    text-align: center;
+}
+
+.box img{
+    width: 250px;
+    height:250px;
+}
+
+.slide img{
+    width: 200px;
+    height: 200px;
+}
+}
